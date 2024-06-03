@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h2>Welcome to my website</h2>
+    </div>
+    
+    <div>
+        <h1>Hey There, My name is <span id="userName">Piyush Garg</span> :)</h1>
+    </div>
+
+    <input id="user-input" type="text" placeholder="Enter your name">
+    <button id="clickButton">Click Me</button>
+
+    <script>
+        const button = document.getElementById("clickButton");
+        const uname = document.getElementById("user-input");
+        const username = document.getElementById("userName");
+        
+        button.addEventListener("click", () => {
+            const value = uname.value;
+            // console.log(value);
+            localStorage.setItem("name", value);
+            // For instant change, no need to refresh
+            location.reload(); 
+        })
+
+        window.addEventListener("load", () => {
+            const value = localStorage.getItem("name");
+            username.innerText = value;
+        })
+    </script>
+</body>
+</html>

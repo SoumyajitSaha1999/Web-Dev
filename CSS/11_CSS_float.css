@@ -1,0 +1,17 @@
+.block {
+    overflow: auto;
+}
+
+.img1 {
+    float: right;
+}
+
+.p1 {
+    border: 2px solid green;
+    text-align: justify;
+    margin-right: 250px;
+}
+
+.img2 {
+    float: left;
+}

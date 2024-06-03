@@ -1,0 +1,39 @@
+body {
+    height: 100vh;
+    margin: 0;
+    background-color: teal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 300px;
+    width: 300px;
+    border: 2px solid white;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+
+    animation-name: slide-in;
+    animation-duration: 1s;
+    animation-fill-mode: none; /* By default */ /* 0% */
+    /* animation-fill-mode: forwards; */ /* 100% */
+    /* animation-fill-mode: backwards; */ /* 0% */
+    /* animation-fill-mode: both; */ /* 100% */
+}
+
+@keyframes slide-in {
+
+    0% {
+        transform: translate(-400px);
+    }
+
+    100% {
+        transform: translate(200px);
+    }
+    
+}

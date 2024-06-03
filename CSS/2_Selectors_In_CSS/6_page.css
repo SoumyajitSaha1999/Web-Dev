@@ -1,0 +1,23 @@
+/* First part */
+#header{
+    color: green;
+}
+.subtitle{
+    color: yellow;
+}
+h1{
+    color: red;
+}
+
+/* Second part */
+.para{
+    background-color: aqua;
+}
+
+/* Third part */
+.first{
+    color: chocolate;
+}
+.second{
+    color: steelblue;
+}

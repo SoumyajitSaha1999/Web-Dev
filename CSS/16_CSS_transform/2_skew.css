@@ -1,0 +1,23 @@
+.container{
+    height: 400px;
+    width: 400px;
+    background-color: steelblue;
+    margin: 80px auto;
+}
+
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: tomato;
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* With the help of skew you can move a div particuler any angle */
+    transform: skew(20deg); /* Horizontally or x --> 20deg */
+    /* transform: skew(20deg, 40deg); */ /* Horizontally or x --> 20deg and Vertically or y --> 40deg */
+    /* transform: skew(0deg, 40deg); */
+    /* transform: skewX(20deg); */
+    /* transform: skewY(40deg); */
+}

@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    border: 2px solid red;
+    display: grid;
+    row-gap: 20px;
+    column-gap: 5px;
+    /* With the help of grid-template-columns we can specify width of columns */
+    /* Here we specify Absolute value */
+    /* grid-template-columns: 100px   200px 300px;  */
+
+    /* You can also specify Relative value.like--> */
+    /* grid-template-columns: 20vw 200px 100px; */
+    grid-template-columns: 30% 70%;
+
+    /* You can also specify Fraction value  */
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    /* You don't repeat 1fr four times.As a soluation we use repeat() function */
+    /* grid-template-columns: repeat(4, 1fr); */
+    /* You can also specify Absolute value in repeat function */
+    /* grid-template-columns: repeat(4, 100px); */
+    /* grid-template-columns: 2fr 1fr 1fr 1fr; */
+
+    /* Some other value of grid-template-columns   */
+    /* grid-template-columns: auto auto; */
+    /* grid-template-columns: 200px auto; */
+    /* grid-template-columns: 35vw auto; */
+    /* grid-template-columns: 20vw auto auto; */
+    /* grid-template-columns: 20vw 1fr 1fr; */
+}
+
+.box{
+    border: 2px solid green;
+    padding: 12px;
+}

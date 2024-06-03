@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo Page</title>
+  </head>
+  <body>
+    <h2>DOM</h2>
+
+    <script>
+
+      alert("Hry there I am a Alert");
+
+
+      // For input
+      // prompt("What's your name?");
+      // prompt("What's your name?", "Soumya"); <-- Here Soumya is default value. You can change it
+
+      //Promt return a String
+      const value = prompt("What's your name?", "Enter your name");
+      console.log(value);
+
+
+      // You have 2 types object. One is window and another is document
+      
+      // Window
+      window.console.log("Hello");
+      window.console.log(Window);
+      // window.alert("Hey there");
+
+      //document (document object available in window object)
+      console.log(document);
+      console.log(window.document);
+      console.log(document.title);
+      console.log(window.document.title);
+      console.log(document.body);
+      document.title = "ABCD";
+      // window.document.title = "ABCD";
+      
+
+      //For debugging purpose
+      document.write("This is haked"); // It just add this sentence(This is haked) at the end
+
+    </script>
+  </body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const name = prompt("What's your name?", "Enter your name");
+        document.write("Hello " + name);
+    </script>
+</body>
+</html> -->

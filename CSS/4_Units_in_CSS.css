@@ -1,0 +1,36 @@
+/* Percentage(%) Unit */
+
+main{
+    border: 5px solid red;
+    width: 50%;
+}
+
+section{
+    border: 5px dashed greenyellow;
+    width: 50%;
+}
+
+
+/* vh & vw Unit */
+
+/* main{
+    border: 5px solid red;
+    width: 50vw;
+    height: 20vh;
+}
+
+section{
+    border: 5px dashed greenyellow;
+    width: 50vw;
+} */
+
+
+/* rem Unit */
+
+/* h1{
+    font-size: 3rem;
+}
+
+p{
+    font-size: 1.5rem;
+} */

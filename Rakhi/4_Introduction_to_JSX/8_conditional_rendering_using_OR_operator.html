@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        function App() {
+            let loggedIN = true;
+            let name = "John";
+            let lastName = "Doe";
+            return (
+                <>
+                  {/*If LastName is present then you want to display Hello LastName else you want to display hello name*/}
+                  <h1>Hello {loggedIN? lastName || name : "user"}!</h1>
+                </>
+            )
+        }
+        ReactDOM.createRoot(document.getElementById("root")).render(<App/>)
+    </script>
+</body>
+</html>
+
+<!-- In Js everything expect 0, null, false, "", undefined everything is considered as true -->
+<!-- OR Operator always return first truth value and last false value. Like -->
+<!-- "hello" || true -- 'hello' -->
+<!-- true || "hello" -- true -->
+<!-- "" || 0 -- 0 -->
+<!-- 0 || "" -- '' -->
+<!-- false and any boolean value doesn't render on the screen -->

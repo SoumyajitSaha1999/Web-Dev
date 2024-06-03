@@ -1,0 +1,26 @@
+
+/* .box{
+    border: 10px solid red;
+    padding: 10px; /* 10px-->top, right, bottom, left */
+    /* padding: 40px 30px 20px 10px; */ /* 40px-->top, 30px-->right, 20px-->bottom, 10px-->left */
+    /* padding: 20px 10px; */ /* 20px-->top & bottom, 10px-->left & right */
+    /* padding: 30px 20px 10px; */ /* 30px-->top, 20px-->left & right, 10px-->buttom */
+    /*margin: 40px;
+} */
+
+/* .box{
+    width: 25vw;
+    height: 25vh;
+    border: 10px solid red;
+    padding: 10px;
+    margin: 40px;
+} */
+
+.box{
+    width: 200px;
+    height: 200px;
+    border: 10px solid red;
+    padding: 10px;
+    margin: 40px;
+    box-sizing: border-box;
+}

@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{  /* They are global variable */
+    --primary-text-color: #222; /* For h1 */
+    --secondary-text-color: #444; /* For h2 & p */
+    --background-color: #eee; /*Light grey */
+    --card-background-color: #fff; /* White*/
+    --default-value: 20px;
+}
+
+.dark{
+    --primary-text-color: #fff;
+    --secondary-text-color: #ddd;
+    --background-color: #111; 
+    --card-background-color: #333; 
+}
+
+.container{
+    padding: 40px;
+    background-color: var(--background-color);
+    height: 100vh;
+}
+
+h1{
+    text-align: center;
+    color: var(--primary-text-color);
+    margin-bottom: 10px;
+}
+
+.box{
+    padding: 40px;
+    border-radius: var(--default-value);
+    /* margin-bottom: var(--default-value); */
+    margin-block: var(--default-value);
+    background-color: var(--card-background-color);
+}
+
+h2{
+    color: var(--secondary-text-color);
+    margin-bottom: var(--default-value);
+}
+
+p{
+    color: var(--secondary-text-color);
+}

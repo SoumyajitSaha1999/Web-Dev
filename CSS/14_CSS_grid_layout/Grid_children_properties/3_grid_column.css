@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 600px;
+    border: 2px solid red;
+    row-gap: 20px;
+    column-gap: 5px;
+    display: grid;
+    /* grid-template-columns: 30% 50% 20%; */
+    grid-template-columns: 200px 200px 200px;
+}
+
+.box {
+    border: 2px solid green;
+    padding: 12px;
+}
+
+#box-1 {
+    background: bisque;
+    /* If you want to go first column to last column.Some ways are-->  */
+
+    /* 1st way */
+    grid-column-start:1; 
+    grid-column-end: 4;
+
+    /* 2nd way */
+    /* grid-column-start: 1; 
+    grid-column-end: -1; */
+
+    /* 3rd way */
+    /* grid-column: 1/-1; */
+
+    /* 4th way */
+    /* grid-column: 1/4; */
+    
+    /* 5th way */
+    /* grid-column: 1/span3; */
+}
+
+
+/* #box-1{
+    background: bisque;
+    /* If you want to go first column to third column.Some ways are-->  */
+
+    /* 1st way */
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    /* 2nd way */
+    grid-column: 1/span 2;
+}  */

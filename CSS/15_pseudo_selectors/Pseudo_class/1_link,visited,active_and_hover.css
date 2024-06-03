@@ -1,0 +1,19 @@
+.primary-btn:link{
+    color: orange;
+}
+
+.primary-btn:visited{
+    color: green;
+}
+
+.primary-btn:hover{
+    color: red;
+    background-color: black;
+}
+
+.primary-btn:active{
+    color: black;
+    background-color: white;
+    border: 4px solid gray;
+}
+

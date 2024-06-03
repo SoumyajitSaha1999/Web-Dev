@@ -1,0 +1,25 @@
+.container{
+    height: 400px;
+    width: 400px;
+    background-color: steelblue;
+    margin: 80px auto;
+}
+
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: tomato;
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* With the help of rotate you can rotate a div */
+    transform: rotate(20deg); /* Horizontally and Vertically --> -20deg */
+    /* transform: rotateX(60deg); */
+    /* transform: rotateX(90deg); */ /* now you can't see the div color tomato */
+    /* transform: rotateY(40deg); */
+}
+
+/* you can also write transform property together. Like --> 
+   transform: scale(1.5) skew(20deg) translate(45px) rotate(20deg) ; */

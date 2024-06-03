@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        img {
+            width: 55px;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    
+    <script type="text/babel">
+        function CarsPage() {
+            let cars = [
+                {name: "BMW", avarage: 10, img: "image.jpg"},
+                {name: "Audi", avarage: 12, img: "image.jpg"},
+                {name: "Jaguar", avarage: 15, img: "image.jpg"}
+            ];
+
+            return (
+                <>
+                  <h1>Car Details</h1>
+
+                  <table border="1px">
+                    <thead>
+                        <tr>
+                            <th>Image</th>    
+                            <th>Name</th>    
+                            <th>Avarage</th>    
+                        </tr>    
+                    </thead>
+  
+                    <tbody>
+                        {cars.map((car, index) => (
+                            <tr key = {index}>
+                                <td><img src = {car.img}/></td>
+                                <td>{car.name}</td>
+                                <td>{car.avarage}</td>    
+                            </tr>
+                        ))}    
+                    </tbody>
+                  </table>
+                </>
+            )
+        }
+
+        function Cars() {
+          let cars = ["BMW", "Audi", "Mercedes", "Jaguar", "RollsRoyace"];
+          
+          return (
+            <>
+              <h1>List of Cars</h1>
+
+              <ul>
+                {cars.map((car, index) => <li key={index}>{car}</li>)}  
+              </ul>
+            </>
+          )
+        }
+
+        function App() {
+            let result = true;
+
+            {/*This is known as Conditional Rendering*/}
+            if(result){
+                return <CarsPage/> 
+            }
+            return (
+                <>
+                  <Cars/>
+                  <CarsPage/>
+                </>
+            )
+        }
+
+        const rootElement = ReactDOM.createRoot(document.getElementById("root"));
+        rootElement.render(<App />);
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+.p1 {
+    height: 400px;
+    width: 400px;
+    border: 2px solid red;
+    overflow: hidden;
+}
+
+.p2 {
+    height: 400px;
+    width: 400px;
+    border: 2px solid green;
+    overflow: scroll;
+    /*Suppose there is no need of scroll, bt it still create scroll bar vartically and horizontally. As a soluation we use auto */
+}
+
+.p3 {
+    height: 400px;
+    width: 400px;
+    border: 2px solid blue;
+    overflow: auto;
+}

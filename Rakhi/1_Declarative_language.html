@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- React script tag -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+</head>
+<body>
+    <div id="reactRoot"></div>
+
+    <div id="root"></div>
+
+    <!-- Using HTML -->
+    <div>
+        <h1 class="header">Hello</h1>
+        <button class="btn">Click</button>
+    </div>
+
+    <!-- Using JavaScript -->
+    <script>
+        const div = document.createElement("div");
+
+        const heading = document.createElement("h1");
+        heading.textContent = "Hello";
+        heading.className = "header";
+
+        const btn = document.createElement("button");
+        btn.textContent = "Click";
+        btn.className = "btn";
+
+        div.append(heading);
+        div.append(btn);
+
+        document.getElementById("root").append(div);
+    </script>
+
+    <!-- Using React -->
+    <script type="text/babel">
+        const header = (
+            <div>
+                <h1 class="header">Hello</h1>
+                <button class="btn">Click</button>
+            </div>
+        );
+    
+        ReactDOM.createRoot(document.getElementById("reactRoot")).render(header);
+    </script>
+
+</body>
+</html>

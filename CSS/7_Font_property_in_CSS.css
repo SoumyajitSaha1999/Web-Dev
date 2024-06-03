@@ -1,0 +1,24 @@
+/* Import by font.google.com */
+
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Fuggles&family=Inclusive+Sans&family=Lato:ital@1&family=Lugrasimo&family=Mooli&family=Roboto+Mono&family=Roboto:ital,wght@0,100;1,100;1,400&family=Silkscreen&family=Ubuntu:wght@300&display=swap');
+h1{
+    font-family: 'Croissant One', cursive;
+}
+
+/* Web safe fonts */
+
+p{
+    font-family: serif; /* By default */
+    font-size: 1.2rem;
+    font-weight: 100;
+    font-style: italic;
+}
+
+/*  
+    font-family: sans-serif;
+    font-family: 'Courier New', Courier, monospace;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: monospace;
+    font-family: fantasy;
+    font-family: 'Times New Roman', Times, serif; 
+*/

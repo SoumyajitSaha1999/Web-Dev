@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-Query Selector</title>
+</head>
+<body>
+
+    <!-- Query Selector always operates/choose on first element -->
+    <div>
+        <div>
+            <h3>This is div2</h3>
+        </div>    
+    </div>
+
+    <div class="block">
+        <h4>My name is <span id="username">Piyush Garg</span> :)</h4>
+        <p class="paragraph">Here is a code for you</p>
+        <pre><code>console.log('Hey There');</code></pre>
+    </div>
+
+    <script>
+
+        //tag name
+        const div = document.querySelector("div");
+        console.log(div);
+        console.log(div.innerHTML);
+        div.innerHTML = "<h4>Hacked!!</h4>";
+        console.log(div.innerHTML);
+
+        // Now you want to change console.log('Hey There'); to alert('Hello');
+        const code = document.querySelector("code");
+        console.log(code); // <code>alert('Hello');</code>
+        console.log(code.innerHTML); // console.log('Hey There');
+        code.innerHTML = "alert('Hello')";
+        console.log(code); // <code>alert('Hello');</code>
+        console.log(code.innerHTML); // alert('Hello');
+
+    </script>
+    
+</body>
+</html>

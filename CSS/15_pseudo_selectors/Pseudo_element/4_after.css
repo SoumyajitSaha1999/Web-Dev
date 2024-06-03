@@ -1,0 +1,16 @@
+h2::after{
+    content: 'End';
+}
+
+.required::after{
+    content: '*';
+    color: red;
+}
+
+.important::after{
+    content: 'importent';
+    color: white;
+    background-color: red;
+    font-size: 0.9rem;
+    margin: 10px;
+}

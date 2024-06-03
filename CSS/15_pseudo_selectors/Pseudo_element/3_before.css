@@ -1,0 +1,8 @@
+h2::before{
+    content: 'Start';
+}
+
+::selection{
+    color: greenyellow;
+    background-color: black;
+}

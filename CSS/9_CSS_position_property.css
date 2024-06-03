@@ -1,0 +1,60 @@
+.container{
+    width: 400px;
+    height: 400px;
+    background-color: lightgrey;
+    margin: 100px;
+    /* position: relative; <-- for position: absolute; */
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+}
+
+/* position: relative */
+.red{
+    background-color: red;
+    position: relative;
+    top: 150px;
+    left: 150px;
+}
+
+/* position: absolute */
+.green{
+    background-color: green;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* position: fixed */
+/* position: fixed used for navigation bar */
+.blue{
+    background-color: blue;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+/* position: sticky */
+.yellow {
+    background-color: yellow;
+    position: sticky;
+    top: 50px;
+}
+
+.spacer{
+    height: 300vh;
+}
+
+/* z-index : When elements are positioned, they can overlap other elements.
+
+The z-index property specifies the stack order of an element (which element should be placed in front of, or behind, the others). */
+
+.green{
+    z-index: 1;
+}
+
+.blue{
+    z-index: 2;
+}

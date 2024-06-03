@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Radio attribute -->
+    <form action="">
+        <p>Enter your T-shirt size</p>
+        <label for="">Small</label>
+        <input type="radio">
+        <label for="">Medium</label>
+        <input type="radio">
+        <label for="">Large</label>
+        <input type="radio">
+    </form> 
+
+    <!-- Here you select multiple option. Bt you want single choice option. For that reason we use name attribute-->
+
+    <form action="">
+        <p>Enter your T-shirt size</p>
+        <label for="">Small</label>
+        <input name="tshirtsize" type="radio">
+        <label for="">Medium</label>
+        <input name="tshirtsize" type="radio">
+        <label for="">Large</label>
+        <input name="tshirtsize" type="radio">
+    </form> 
+
+    <form action="">
+        <p>Enter your T-shirt size</p>
+        <input name="tshirtsize" type="radio">
+        <label for="">Small</label><br>
+
+        <input name="tshirtsize" type="radio">
+        <label for="">Medium</label><br>
+
+        <input name="tshirtsize" type="radio">
+        <label for="">Large</label>
+    </form> 
+
+    <!-- Now you click on small text bt small checkbox can't fill. For that reason we use id and for attribute -->
+
+    <form action="">
+        <p>Enter your T-shirt size</p>
+        <input  id="small" name="tshirtsize" type="radio">
+        <label for="small">Small</label><br>
+
+        <input id="medium" name="tshirtsize" type="radio">
+        <label for="medium">Medium</label><br>
+
+        <input id="large" name="tshirtsize" type="radio">
+        <label for="large">Large</label>
+    </form> 
+</body>
+</html>

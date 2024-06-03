@@ -1,0 +1,37 @@
+body{
+    height: 100vh;
+    margin: 0;
+    background-color: teal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    height: 300px;
+    width: 300px;
+    border: 2px solid white;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: white;
+
+    animation-name: orbit;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}
+
+@keyframes orbit {
+    
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,34 @@
+.block1{
+    border: 2px solid red;
+    margin-bottom: 50px;
+}
+
+.img{
+    float: right;
+}
+
+/* clear and float property used for styling text and images. For layout formatting we use flex and grid */
+.p1{
+    clear: right;
+    /* clear: both; */ /* you can also do that */
+}
+
+.block2{
+    border: 2px solid green;
+}
+
+.img1{
+    float: right; 
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.img2{  /* 100x120 */
+    float: right;
+    clear: right;
+    margin-left: 10px;
+}
+
+.p2{
+    text-align: justify;
+}

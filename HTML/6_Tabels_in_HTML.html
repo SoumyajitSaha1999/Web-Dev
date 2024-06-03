@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="">  <!--<table border="3">   --> 
+        <tr>
+            <th>Subject</th>
+            <th>Marks</th>
+            <th>Passed</th>
+        </tr>
+        <tr>
+            <td>Mathematics</td>
+            <td>98</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td>English</td>
+            <td>12</td>
+            <td>No</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+<!-- <thead>, <tbody> & <tfoot> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="">
+        <thead>
+            <tr>
+                <th>Subject</th>
+                <th>Marks</th>
+                <th>Passed</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Mathematics</td>
+                <td>98</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>English</td>
+                <td>12</td>
+                <td>No</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th>Passed</th>
+                <th>Yes</th>
+            </tr>
+        </tfoot>
+
+    </table>
+</body>
+</html>
+
+
+<!-- <caption>, <colgroup> and <col> -->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <table border="">
+
+            <caption>My Marksheet</caption>
+            <colgroup>
+                <!-- <COl style="background-color: blue;">  bY default it specifies first column -->
+                <col span="2" style="background-color: blue;">
+                <col style="background-color: red;">
+            </colgroup>
+            <thead style="background-color: yellow;">
+                <tr>
+                    <th>Subject</th>
+                    <th>Marks</th>
+                    <th>Passed</th>
+                </tr>
+            </thead>
+    
+            <tbody>
+                <tr>
+                    <td>Mathematics</td>
+                    <td>98</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>English</td>
+                    <td>12</td>
+                    <td>No</td>
+                </tr>
+            </tbody>
+    
+            <tfoot style="background-color: chartreuse;">
+                <tr>
+                    <th>Passed</th>
+                    <th>Yes</th>
+                </tr>
+            </tfoot>
+    
+        </table>
+    </body>
+    </html>
+    
+
+   <!-- <colspan> & <rowspan> -->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <table border="">
+            <caption>Demo Table</caption>
+            <tr>
+                <th></th>
+                <th colspan="2">Column1</th>
+                <th>Column2</th>
+            </tr>
+            <tr>
+                <th rowspan="2">Row</th>
+                <td>cell1,1</td>
+                <td>cell1,2</td>
+                <td>cell1,3</td>
+            </tr>
+            <tr>
+                <td>cell2,1</td>
+                <td>cell2,2</td>
+                <td>cell2,3</td>
+            </tr>
+            <tr>
+                <th>Row2</th>
+                <td>cell3,1</td>
+                <td>cell3,2</td>
+                <td>cell3,3</td>
+            </tr>
+        </table>
+    </body>
+    </html>

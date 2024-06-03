@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-Query Selector</title>
+</head>
+<body>
+    
+    <nav class="block">
+        <p class="paragraph">Welcome to my website</p>
+    </nav>
+
+    <div class="block">
+        <h4>My name is <span id="username">Piyush Garg</span> :)</h4>
+        <p class="paragraph">Here is a code for you</p>
+        <pre><code>console.log('Hey There');</code></pre>
+    </div>
+
+    <script>
+        
+        // Query Selector
+        /*
+           Selectors
+            - tag name
+            - body
+            - class
+        */
+
+        // tag name
+        const body = document.querySelector("body");
+        console.log(body);
+        console.log(body.innerHTML);
+        // body.innerHTML = "<h1>Hacked!!</h1>";
+
+        const div = document.querySelector("div");
+        console.log(div);
+        console.log(div.innerHTML);
+        div.innerHTML = "<h4>Div Hacked!!</h4>";
+        console.log(div.innerHTML);
+
+    </script>
+
+</body>
+</html>

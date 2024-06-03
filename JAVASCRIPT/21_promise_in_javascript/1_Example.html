@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div>
+        <h2>Welcome to my website</h2>
+    </div>
+
+    <script>
+
+        // Promise create
+        const ticket = new Promise(function(resolve, reject){
+            const isBorded = false;
+            if(isBorded == true){
+                resolve("You are in the flight");
+            }else{
+                reject("Your flight has been canceled");
+            }
+        });
+
+        // Use of promise
+        ticket
+            .then ((data) => {
+                console.log("Wohoo", data);
+            })
+            .catch ((data) => {
+                console.log("Oh no", data);
+            })
+            .finally (() => {
+                console.log("I will always be executed");
+            })
+
+    </script>
+
+</body>
+</html>
+
+<!-- Note: But this is a synchronous nature promise -->

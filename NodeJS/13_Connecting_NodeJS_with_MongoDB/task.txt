@@ -1,0 +1,5 @@
+In MongoDB you have a Schema. Using the Schema we create a Model and using this Model we do CRUD(Create, Read, Update, Delete) Operations
+
+Schema - Define the Structure
+    Schema - Model
+    Using Model we do CRUD Operations

@@ -1,0 +1,47 @@
+.container{
+    height: 600px;
+    width: 600px;
+    margin: 100px auto;
+    background-color: #eee;
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#boxLeft{
+    height: 250px;
+    width: 250px;
+    margin: 25px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+#boxRight{
+    height: 250px;
+    width: 250px;
+    margin: 25px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    border: 1px solid gray;
+}
+
+img{
+    width: 220px;
+    height: 220px;
+}
+
+/* >640px --> boxLeft & boxRight will side by side. Because flex-direction:row; */
+/* 0 to 640px --> boxLeft & boxRight will column wise. Because flex-direction:column; */
+
+@media (max-width:640px) {
+    .container{
+        flex-direction: column;
+    }
+}

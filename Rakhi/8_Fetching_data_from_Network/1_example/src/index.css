@@ -1,0 +1,15 @@
+/* For Custom shadow - visit the site
+https://getcssscan.com/css-box-shadow-examples */
+
+.post-card {
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.post-card h1 {
+  text-align: center;
+}
+
+.post-card p {
+  text-align: center;
+}

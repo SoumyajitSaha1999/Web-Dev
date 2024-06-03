@@ -1,0 +1,63 @@
+body{
+    height: 100vh;
+    margin: 0;
+    background-color: teal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    height: 300px;
+    width: 300px;
+    border: 2px solid white;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: white;
+
+    /* animation property */
+
+    animation-name: circles; /* Animation name and keyframe name must be same */
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    /* animation-iteration-count: 4; */
+
+    animation-direction: normal; /* By default */
+    /* animation-direction: reverse; */
+    /* animation-direction: alternate; */
+    /* animation-direction: alternate-reverse; */
+
+    /* animation-timing-function same as transition-timing-function */
+    animation-timing-function: linear;
+    /* animation-timing-function: ease-in; */
+    /* animation-timing-function:  cubic-bezier(0.2, 4.17, 0.46,-2.07); */
+    animation-fill-mode: none;
+}
+
+@keyframes circles {
+
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(200px, 0);
+    }
+
+    50% {
+        transform: translate(200px, 200px);
+    }
+
+    75% {
+        transform: translate(0, 200px);
+    }
+
+    /* 100% {
+        transform: translate(0, 0);
+    } */
+
+}

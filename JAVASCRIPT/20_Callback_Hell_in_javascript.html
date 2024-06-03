@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h2>Welcome to my website</h2>
+    </div>
+
+    <script>
+
+        function getCheese(){
+            setTimeout(() => {
+                const cheese = "🧀";
+                console.log("Here is cheese", cheese);
+                return cheese; // The return statement is of no use here
+            }, 2000);
+
+            // return undefined; <-- By default
+        }
+
+        console.log(getCheese()); // undefined
+                                  // Here is cheese 🧀
+
+    </script>
+
+
+    <script>
+
+        // You want to make a pizza and the process of making Pizza is --
+        //Pizza --> Dough --> Cheese
+
+        function getCheese(callBack){
+            setTimeout(() => {
+                const cheese = "🧀";
+                console.log("Here is cheese", cheese);
+                callBack(cheese);
+            }, 2000);
+        }
+
+        function makeDough(cheese, callBack){
+           setTimeout(() => {
+            const dough = cheese + "🍳";
+            console.log("Here is dough", dough);
+            callBack(dough);
+           }, 2000);
+        }
+
+        function bakePizza(dough, callBack){
+            setTimeout(() => {
+                const pizza = dough+"🍕"
+                console.log("Here is pizza", pizza);
+                callBack(pizza);
+            }, 2000);
+        }
+
+        getCheese((cheese) => {
+            makeDough(cheese, (dough) => {
+                bakePizza(dough, (pizza) => {
+                    console.log("Hey, your pizza is ready", pizza);
+                });
+            });
+        });
+
+    </script>
+</body>
+</html>

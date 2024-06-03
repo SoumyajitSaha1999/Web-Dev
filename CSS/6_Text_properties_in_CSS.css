@@ -1,0 +1,32 @@
+h1 {
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: underline;
+    text-decoration-color: rgb(56, 86, 10);
+    text-decoration-style: dotted;
+}
+
+p {
+    text-align: justify;
+}
+
+a {
+    text-decoration: line-through;
+    text-decoration-color: green;
+    text-decoration-style: wavy;
+    text-transform: capitalize;
+}
+
+/* Some extra attribute of Text */
+
+h1 {
+    text-shadow: 2px 3px rgb(217, 198, 198); /* 2px--> vartical shadow, 3px--> horizontal shadow */
+    /* You can add 2 color as a shadow. like--> 
+    text-shadow: 2px 3px red, 4px 6px blue; */
+}
+
+p {
+    text-indent: 60px;
+    line-height: 1.5rem;
+    word-spacing: 5px;
+}

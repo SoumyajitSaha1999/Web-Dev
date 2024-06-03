@@ -1,0 +1,55 @@
+/* We can't specify height and width for inline elements */
+
+/* a{
+    height: 40px; <-- It doesn't work 
+}
+*/
+
+ul{
+    list-style: none; /* It removes the bullet. Other value of list-style are disc, square and many more  */
+    text-align: right;
+    padding: 30px;
+    /* word-spacing: 20px; */
+    background-color: black;
+    color: white;
+    border: 2px solid red;
+}
+
+
+li{
+    display: inline;
+    padding: 20px;
+    border: 2px solid red;
+}
+
+
+li:hover{
+    color: gold;
+    cursor: pointer;
+}
+
+
+p{
+    display:inline;
+    width: 70px; /*  It doesn't work. We can't specify height and width for inline elements */
+    border: 2px solid red;
+}
+
+
+.display{
+    display: inline-block; 
+    width: 700px; /* Here width and height property work properly because of inline-block */
+}
+
+
+img{
+    height: 200px;
+    /* display: none; <-- you can't see the image */
+}
+
+
+a{ 
+    margin: 100px; /* For inline element margin doesn't work top and bottom, only work for left and right */
+    border: 2px solid red; 
+    text-decoration: none;
+}

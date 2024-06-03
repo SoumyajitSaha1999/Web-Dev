@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+        <h2>Welcome to my website</h2>
+    </div>
+
+    <script>
+
+      // Create cookies
+      document.cookie = "name = Kayle; expires = wed, 1 Jan 2025 12:00:00 UTC";
+      document.cookie = "add = India; expires = Fri, 1 Dec 2023 12:00:00 UTC";
+      document.cookie = "age = 15"; // session <-- by default
+
+      // How to change cookies
+      document.cookie = "add = UK; expires = Fri, 1 Dec 2023 12:00:00 UTC";
+      // You can also add. Like -->
+      // document.cookie = "add = India, UK";
+
+      // How to read cookies
+      const x = document.cookie;
+      console.log(x); // name=Kayle; age=15; add=UK
+
+      // How to delete cookies
+      // Fix date to past for deletion
+      document.cookie = "add = India; expires = Tue, 17 Oct 2023 12:00:00 UTC";
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+.box{
+    height: 200px;
+    width: 200px;
+    margin: 100px auto;
+    background-color: teal;
+    transition-duration: 0.5s; /* transition: 0.5s; <-- Both are same */
+}
+
+.box:hover{
+    background-color: purple;
+    border-radius: 50%;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    
+    <script type="text/babel">
+
+      function App() {
+        let arr = [1, 2, 3, 4, 5, 6];
+
+        let obj = {
+          name: "Alexa",
+          age: 10,
+        };
+
+        return (
+          <>
+            <h1>Arrays and Objects in Javascript</h1>
+            <h2>{arr}</h2>
+            {/* You want to access each element of array */}
+            {arr.map((e) => (<h2>{e}</h2>))}
+            {/* You want to access only even number of array */}
+            {arr.filter((e) => e % 2 == 0)}
+            {arr.filter((e) => e % 2 === 0).map((e) => (<h2>{e}</h2>))}
+
+            {/* {obj} <-- You can't access Object directly */}
+            <h2>{obj.name}</h2>
+            <h2>{obj.age}</h2>
+          </>
+        );
+      }
+
+      const rootElement = ReactDOM.createRoot(document.getElementById("root"));
+      rootElement.render(<App />);
+      </script>
+  </body>
+</html>

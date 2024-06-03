@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h2>Welcome to my website</h2>
+    </div>
+
+    <script>
+      function getCheese() {
+        return new Promise((resolve, reject) => {
+          setTimeout(() => {
+            const cheese = "🧀";
+            resolve(cheese);
+          }, 2000);
+        });
+      }
+
+      function makeDough(cheese) {
+        return new Promise((resolve, reject) => {
+          setTimeout(() => {
+            const dough = cheese + "🍳";
+            // resolve(dough);
+            reject("Bad cheese");
+          }, 2000);
+        });
+      }
+
+      function bakePizza(dough) {
+        return new Promise((resolve, reject) => {
+          setTimeout(() => {
+            const pizza = dough + "🍕";
+            resolve(pizza);
+          }, 2000);
+        });
+      }
+
+      
+      async function orderPizza() {
+        // For process reject handle we use try catch
+        try {
+          const cheese = await getCheese();
+          console.log("Here is the cheese", cheese);
+
+          const dough = await makeDough(cheese);
+          console.log("Here is the dough", dough);
+
+          const pizza = await bakePizza(dough);
+          console.log("Hey, your pizza is ready", pizza);
+        } catch (err) {
+          console.log("Error occurd", err);
+        }
+        console.log("Process ended"); // finally
+      }
+
+      orderPizza();
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div>
+        <h3>Welcome to my website</h3>
+    </div>
+
+    <div>
+        <p>My name is <span onclick="alert('hey')">
+            Piyush Garg</span> :)</p>
+    </div>
+
+    <div id="my-container"></div>
+    <button id="clickButton">Click Me</button>
+
+    <div id="my-list"></div>
+    <button id="listButton">Create List</button>
+
+
+    <script>
+        const button = document.getElementById("clickButton");
+        const container = document.getElementById("my-container");
+
+        button.addEventListener("click", () => {
+            const el = document.createElement("h1"); // Here we create an element
+            el.innerText = "Piyush Garg";
+            container.appendChild(el); // Insert that element in a DOM
+        })
+    </script>
+
+    <script>
+        const btn = document.getElementById("listButton");
+        const list = document.getElementById("my-list");
+        let count = 0;
+
+        btn.addEventListener("click", () => {
+            const ele = document.createElement("li");
+            ele.innerText = ++count;
+            list.appendChild(ele);
+        })
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+body{
+   background-color: rgb(228, 228, 245);
+}
+h1{
+    color: cornsilk;
+    background: blueviolet;
+}
+p{
+    font-size: medium;
+    background-color: rgb(245, 143, 143);
+    /* color: transparent; */
+}

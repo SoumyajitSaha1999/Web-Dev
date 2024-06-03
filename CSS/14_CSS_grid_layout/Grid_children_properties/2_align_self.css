@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 600px;
+    border: 2px solid red;
+    row-gap: 20px;
+    column-gap: 5px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.box{
+    border: 2px solid green;
+    padding: 12px;
+}
+
+/* #box-1{
+    background-color: bisque; 
+    align-self: stretch; <-- By default
+    align-self: start;
+    align-self: end;
+    align-self: center;
+} */
+
+#box-1{
+    background-color: bisque;
+    justify-self: end;
+    align-self: start;
+}
